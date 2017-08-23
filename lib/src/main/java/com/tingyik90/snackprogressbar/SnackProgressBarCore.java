@@ -17,7 +17,7 @@ import android.widget.TextView;
 /**
  * Core class constructing the SnackProgressBar.
  */
-class SnackProgressBarCore extends BaseTransientBottomBar<SnackProgressBarCore> {
+public class SnackProgressBarCore extends BaseTransientBottomBar<SnackProgressBarCore> {
 
     /* variables */
     private static final int SHORT_DURATION_MS = 1500;
