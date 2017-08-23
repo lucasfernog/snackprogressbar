@@ -178,6 +178,15 @@ public class SnackProgressBarManager {
     }
 
     /**
+     * Retrieves the SnackProgressBarCore that is currently or was showing.
+     *
+     * @return SnackProgressBarCore that is currently or was showing. Return null if nothing was ever shown.
+     */
+    public SnackProgressBarCore getLastShownCore() {
+        return currentCore;
+    }
+
+    /**
      * Shows the SnackProgressBar based on its storeId with the specified duration.
      * If another SnackProgressBar is already showing, this SnackProgressBar will be queued
      * and shown accordingly after those queued are dismissed.
